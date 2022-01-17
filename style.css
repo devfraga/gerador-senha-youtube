@@ -84,8 +84,29 @@ body{
 }
 .password:hover{
   transform: scale(1.05);
+  border-color: #FFF;
 }
 
 .hide{
   display: none;
+}
+
+.tooltip{
+  color: #FFF;
+  position: relative;
+  top: 20px;
+  padding: 6px 8px;
+  font-size: 16px;
+  border-radius: 6px;
+  background: rgb(15, 15, 15);
+  opacity: 0;
+  visibility: hidden;
+  transition: all .5s ease-in-out;
+  text-align: center;
+}
+
+.container-password:hover .tooltip{
+  bottom: 50px;
+  visibility: visible;
+  opacity: 1;
 }
